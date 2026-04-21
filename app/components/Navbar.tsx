@@ -1,4 +1,3 @@
-import React from 'react';
 import '../styles/Navbar.css';
 import '../styles/variables.css';
 
@@ -42,9 +41,11 @@ const Navbar = () => {
       </ul>
 
       {/* button */}
-      <button className="button" type="button">
-        Yozilish
-      </button>
+      <a href="/contact" className="nav-links">
+        <button className="button" type="button">
+          Yozilish
+        </button>
+      </a>
     </div>
   );
 };

@@ -1,9 +1,17 @@
 :root {
-  --main-bg: #0f221a;
+  --main-bg: linear-gradient(
+    135deg,
+    rgb(14, 32, 24) 0%,
+    rgb(30, 58, 47) 40%,
+    rgb(45, 84, 65) 70%,
+    rgb(26, 48, 40) 100%
+  );
   --nav-logo-color: #ffffff;
   --nav-link-hover: #c9a84c;
   --button-color: #ffffff;
   --button-color-hover: #c9a84c;
   --button-border-color: #ffffff;
   --button-hover-text-color: #1e3a2f;
+
+  --gold-text-color: #c9a84c;
 }

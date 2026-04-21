@@ -1,0 +1,16 @@
+.hero-wrapper {
+  display: flex;
+  background: var(--main-bg);
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.left-section {
+  padding: 0 60px;
+}
+
+.gold-text {
+  color: var(--gold-text-color);
+}
