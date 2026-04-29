@@ -1,18 +1,35 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Cormorant Garamond', serif;
+@theme {
+  --color-brand-dark: #0e2018;
+  --color-brand-green: #1e3a2f;
+  --color-brand-gold: #c9a84c;
+  --font-serif: "Cormorant Garamond", serif;
 }
 
-body {
-  font-family: 'Cormorant Garamond', serif;
+:root {
+  --main-bg: linear-gradient(
+    135deg,
+    #0e2018 0%,
+    #1e3a2f 40%,
+    #2d5441 70%,
+    #1a3028 100%
+  );
 }
 
-.container {
-  max-width: 1200px;
-  width: 100%;
-  margin: 0 auto;
+@layer base {
+  * {
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+  body {
+    @apply bg-brand-dark text-white font-serif antialiased;
+    background: var(--main-bg) fixed;
+    min-height: 100vh;
+  }
+}
+
+.gold-gradient {
+  background: linear-gradient(to right, #c9a84c, #e5c167, #c9a84c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
