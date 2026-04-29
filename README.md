@@ -1,58 +1,87 @@
-# Lumiere Beauty Salon
+# Welcome to React Router!
 
-Professional va zamonaviy go'zallik saloni uchun veb-sayt. Ushbu loyiha React Router v7 va Tailwind CSS 4 yordamida qurilgan.
+A modern, production-ready template for building full-stack React applications using React Router.
 
-## 🚀 Xususiyatlari
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
 
-- **Zamonaviy Dizayn**: Cormorant Garamond shrifti va brend ranglaridan foydalangan holda premium ko'rinish.
-- **To'liq Reaktiv (Responsive)**: Barcha qurilmalar (mobil, planshet, desktop) uchun moslashtirilgan.
-- **Tezkor Yuklanish**: Vite va React Router v7 platformasining barcha afzalliklari.
-- **Bo'limlar**:
-  - **Bosh sahifa**: Biz haqimizda, xizmatlar va mijozlar fikrlari.
-  - **Xizmatlar**: Kategoriyalangan narxlar ro'yxati.
-  - **Ustalar**: Professional jamoamiz bilan tanishuv.
-  - **Galereya**: Amalga oshirilgan ishlardan namunalar (filtr bilan).
-  - **Bog'lanish**: Aloqa ma'lumotlari va onlayn yozilish formasi.
+## Features
 
-## 🛠 Texnologiyalar
+- 🚀 Server-side rendering
+- ⚡️ Hot Module Replacement (HMR)
+- 📦 Asset bundling and optimization
+- 🔄 Data loading and mutations
+- 🔒 TypeScript by default
+- 🎉 TailwindCSS for styling
+- 📖 [React Router docs](https://reactrouter.com/)
 
-- [React 19](https://react.dev/)
-- [React Router v7](https://reactrouter.com/)
-- [Tailwind CSS v4](https://tailwindcss.com/)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Vite](https://vitejs.dev/)
+## Getting Started
 
-## 💻 Mahalliy o'rnatish
+### Installation
 
-1. Loyihani yuklab oling:
-   ```bash
-   git clone <repository-url>
-   ```
+Install the dependencies:
 
-2. Bog'liqliklarni o'rnating:
-   ```bash
-   npm install
-   ```
+```bash
+npm install
+```
 
-3. Dasturni ishga tushiring:
-   ```bash
-   npm run dev
-   ```
+### Development
 
-4. Brauzerda oching: `http://localhost:5173`
+Start the development server with HMR:
 
-## 🏗 Build va Production
+```bash
+npm run dev
+```
 
-Production uchun tayyorlash:
+Your application will be available at `http://localhost:5173`.
+
+## Building for Production
+
+Create a production build:
+
 ```bash
 npm run build
 ```
 
-Serverni ishga tushirish:
+## Deployment
+
+### Docker Deployment
+
+To build and run using Docker:
+
 ```bash
-npm run start
+docker build -t my-app .
+
+# Run the container
+docker run -p 3000:3000 my-app
 ```
 
-## 📄 Litsenziya
+The containerized application can be deployed to any platform that supports Docker, including:
 
-Ushbu loyiha MIT litsenziyasi ostida.
+- AWS ECS
+- Google Cloud Run
+- Azure Container Apps
+- Digital Ocean App Platform
+- Fly.io
+- Railway
+
+### DIY Deployment
+
+If you're familiar with deploying Node applications, the built-in app server is production-ready.
+
+Make sure to deploy the output of `npm run build`
+
+```
+├── package.json
+├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
+├── build/
+│   ├── client/    # Static assets
+│   └── server/    # Server-side code
+```
+
+## Styling
+
+This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
+
+---
+
+Built with ❤️ using React Router.
