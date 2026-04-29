@@ -1,18 +1,40 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Cormorant Garamond', serif;
+@theme {
+  --color-brand-dark: #0e2018;
+  --color-brand-green: #1e3a2f;
+  --color-brand-gold: #c9a84c;
+
+  --font-serif: "Cormorant Garamond", serif;
 }
 
-body {
-  font-family: 'Cormorant Garamond', serif;
+@layer base {
+  * {
+    @apply border-brand-gold/20;
+  }
+  body {
+    @apply bg-brand-dark text-white font-serif antialiased selection:bg-brand-gold selection:text-brand-dark;
+  }
 }
 
-.container {
-  max-width: 1200px;
-  width: 100%;
-  margin: 0 auto;
+@layer components {
+  .container {
+    @apply max-w-[1400px] mx-auto px-4 md:px-8;
+  }
+
+  .btn-primary {
+    @apply px-8 py-3 bg-brand-gold text-brand-dark font-semibold uppercase tracking-widest text-sm transition-all duration-300 hover:bg-white hover:shadow-[0_0_20px_rgba(201,168,76,0.4)];
+  }
+
+  .btn-outline {
+    @apply px-8 py-3 border border-brand-gold text-brand-gold font-semibold uppercase tracking-widest text-sm transition-all duration-300 hover:bg-brand-gold hover:text-brand-dark;
+  }
+
+  .section-title {
+    @apply text-4xl md:text-6xl font-medium mb-8 text-center;
+  }
+
+  .gold-gradient-text {
+    @apply bg-linear-to-r from-brand-gold via-[#f3e3b4] to-brand-gold bg-clip-text text-transparent;
+  }
 }
